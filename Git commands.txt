@@ -34,7 +34,9 @@ git push origin master
 git config --global alias.st status 
 git config --list 
 
-git branch testing
+git branch testing	#create branch
+git branch		#list brances
+git branch -v		#list brances and see last commit
 git branch -d testing  #delete branch
 
 

@@ -35,6 +35,9 @@ git config --global alias.st status
 git config --list 
 
 git branch testing
+git branch -d testing  #delete branch
+
+
 git checkout testing
 git checkout -b testing  #same as the two above combined
 git checkout master

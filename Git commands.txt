@@ -1,0 +1,46 @@
+
+
+git log
+git log -p -2
+git log --stat
+git log --pretty=format:"%h - %an, %ar : %s"
+git log --oneline --decorate
+git log --oneline --decorate --graph --all
+
+
+git rm PROJECTS.md
+git rm \*~        #This command removes all files whose names end with a ~
+
+
+git clone https://github.com/schacon/ticgit
+
+git remote
+git remote -v
+git remote add jb https://github.com/jensbruer/ticgit  #add a new remote Git repository as a shortname you can reference easily
+git remote show origin
+git remote rename jb jens
+git remote rm jens
+
+git fetch https://github.com/jensbruer/GitTest
+
+git tag
+git tag -a v1.4 -m "my version 1.4"
+
+git push origin v1.5
+git push origin --tags
+git push origin master
+
+
+git config --global alias.st status 
+git config --list 
+
+git branch testing
+git checkout testing
+git checkout -b testing  #same as the two above combined
+git checkout master
+
+
+git commit -m "Story 182: Fix benchmarks for speed"
+git commit --amend
+
+git merge testing

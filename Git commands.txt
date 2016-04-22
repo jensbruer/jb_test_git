@@ -29,23 +29,29 @@ git tag -a v1.4 -m "my version 1.4"
 git push origin v1.5
 git push origin --tags
 git push origin master
-
+git push origin serverfix #push local branch serverfix to origin
+git push origin --delete serverfix
 
 git config --global alias.st status 
 git config --list 
+git config --global alias.logg 'log --oneline --decorate --graph --all'
 
 git branch testing	#create branch
 git branch		#list brances
 git branch -v		#list brances and see last commit
 git branch -d testing  #delete branch
+git branch --merged
+git branch --no-merged
 
 
 git checkout testing
 git checkout -b testing  #same as the two above combined
 git checkout master
-
+git checkout --track origin/serverfix
 
 git commit -m "Story 182: Fix benchmarks for speed"
 git commit --amend
 
 git merge testing
+
+git reset		#unstage all files

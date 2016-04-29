@@ -48,10 +48,14 @@ git checkout testing
 git checkout -b testing  #same as the two above combined
 git checkout master
 git checkout --track origin/serverfix
+git checkout -- GNUmakefile 	#discard changes in working directory
+
 
 git commit -m "Story 182: Fix benchmarks for speed"
 git commit --amend
 
-git merge testing
+git merge devBranch		#merge master with devBranch when already on master
 
 git reset		#unstage all files
+
+git pull origin 		#Update your local repo from server
